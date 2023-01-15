@@ -31,6 +31,7 @@ nav a {
   text-decoration: none;
   color: black;
 }
+
 nav li {
   list-style: none;
   margin-left: 50px;
@@ -42,6 +43,7 @@ nav ul {
 .nav ul li {
   font-size: 18px;
 }
+
 .nav-title {
   font-weight: 700;
   font-size: 35px;
@@ -135,6 +137,7 @@ nav ul {
   color: #727272;
   font-weight: 400;
   font-size: 16px;
+  padding-top: 10px;
 }
 .experience-btn {
   width: 300px;
@@ -149,7 +152,7 @@ nav ul {
 
 /* some facts section */
 .facts-sections {
-  margin: 0 240px;
+  margin: 0 140px;
 }
 .facts-title {
   font-weight: 700;
@@ -165,11 +168,11 @@ nav ul {
 .facts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 120px;
+  grid-gap: 50px;
   text-align: center;
 }
 .fact {
-  padding: 20px 40px;
+  padding: 20px 20px;
   border: 1px solid #ff900e;
   border-radius: 8px;
   color: rgba(0, 0, 0, 0.6);
@@ -182,10 +185,11 @@ nav ul {
 .fact-title {
   color: #424242;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
 }
 .fact-description {
   font-size: 15px;
+  padding-top: 10px;
 }
 
 /* Our sponsors section styles */
@@ -214,13 +218,40 @@ nav ul {
   filter: grayscale(100%);
 }
 
+/* Our works styles */
+.our-works {
+  margin: 80px 100px;
+}
+.works-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+hr {
+  width: 40%;
+  border: none;
+  height: 5px;
+  background-color: #ff900e;
+  margin-bottom: 50px;
+}
+
+.works-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.works-images img {
+  width: 100%;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
 footer {
   max-width: 984px;
   height: 70px;
   background-color: #fff4e7;
   border-radius: 8px;
   text-align: center;
-  margin: 130px 240px;
+  margin: 130px 240px 0 240px;
 }
 .copy-right {
   color: #424242;
@@ -238,9 +269,15 @@ footer {
 @media only screen and (max-width: 576px) {
   nav {
     flex-direction: column;
+    padding: 50px 60px;
   }
   nav ul {
     flex-direction: column;
+    padding: 20px 0;
+  }
+  nav li {
+    list-style: none;
+    margin-left: 0px;
   }
   .highlighted-features-section {
     flex-direction: row;
@@ -265,8 +302,7 @@ footer {
     width: 100%;
     padding: 0;
   }
-  .experience-btn {
-  }
+
   .facts-sections {
     margin: 0 50px;
   }
@@ -282,12 +318,15 @@ footer {
   .brand-logo img {
     padding: 10px 0;
   }
+  /* our works style */
+  .our-works {
+    margin: 80px 30px;
+  }
+  .works-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
   footer {
     width: 100%;
     margin: 0;
   }
-}
-
-.hide {
-  display: none;
 }

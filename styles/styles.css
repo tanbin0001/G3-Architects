@@ -69,7 +69,7 @@ nav ul {
 }
 /* Features Section styles */
 
-.features-section {
+.featured-section {
   margin: 50px 150px;
   display: flex;
   align-items: center;
@@ -235,8 +235,59 @@ footer {
  Responsiveness for phone  
  --------------------------*/
 
-@media only screen and (min-width: 576px) {
-  .nav {
+@media only screen and (max-width: 576px) {
+  nav {
     flex-direction: column;
   }
+  nav ul {
+    flex-direction: column;
+  }
+  .highlighted-features-section {
+    flex-direction: row;
+  }
+  .banner-img img {
+    margin: 0;
+    padding: 45px 0;
+    width: 100%;
+  }
+  .featured-section {
+    margin: 50px 0;
+    flex-direction: column;
+  }
+  .featured-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlighted-features-section {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  .highlighted-features-img img {
+    width: 100%;
+    padding: 0;
+  }
+  .experience-btn {
+  }
+  .facts-sections {
+    margin: 0 50px;
+  }
+  .facts {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .brand-logo {
+    box-shadow: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .brand-logo img {
+    padding: 10px 0;
+  }
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.hide {
+  display: none;
 }
